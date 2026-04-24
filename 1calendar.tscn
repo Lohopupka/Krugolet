@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bew26r5k5beg5"]
+
+[ext_resource type="Texture2D" uid="uid://bd7mgflaem512" path="res://sprite_Calendar/Rectangle 62.png" id="1_bhjof"]
+[ext_resource type="Texture2D" uid="uid://dwbognrhb6rvg" path="res://sprite_Calendar/add 3.png" id="2_cxj5o"]
+[ext_resource type="Texture2D" uid="uid://dmkwga6ji07hn" path="res://sprite_Calendar/dnev.png" id="3_xu1ar"]
+[ext_resource type="Texture2D" uid="uid://cum56movbidd7" path="res://sprite_Calendar/deadLine.png" id="4_ju3p5"]
+[ext_resource type="Texture2D" uid="uid://dfx7jt8t87k0q" path="res://sprite_Calendar/calendar_on.png" id="5_avq3p"]
+[ext_resource type="Texture2D" uid="uid://dgga3lr8aip7" path="res://sprite_Calendar/Group 77.png" id="6_yqeo1"]
+[ext_resource type="Texture2D" uid="uid://deb4p0bmy8rx4" path="res://sprite_Calendar/Group 78.png" id="7_gre2m"]
+[ext_resource type="Texture2D" uid="uid://uheqseve6ce3" path="res://sprite_Calendar/Group 81.png" id="8_h1nnw"]
+[ext_resource type="Texture2D" uid="uid://c2sa45fdsjrcw" path="res://sprite_Calendar/Rectangle 59.png" id="9_vehn5"]
+
+[node name="Control" type="Control" unique_id=476601956]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1558041510]
+position = Vector2(180.25, 320.28397)
+scale = Vector2(1.2526131, 1.0783972)
+texture = ExtResource("1_bhjof")
+
+[node name="add" type="TextureButton" parent="Sprite2D" unique_id=1073394997]
+offset_left = 92.40683
+offset_top = -286.7997
+offset_right = 128.61685
+offset_bottom = -245.07112
+texture_normal = ExtResource("2_cxj5o")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="dnevnic" type="TextureButton" parent="Sprite2D" unique_id=1295118783]
+offset_left = -119.15092
+offset_top = 236.19873
+offset_right = -69.65438
+offset_bottom = 289.05505
+texture_normal = ExtResource("3_xu1ar")
+ignore_texture_size = true
+
+[node name="deadline_button" type="TextureButton" parent="Sprite2D" unique_id=1430153216]
+offset_left = -62.469406
+offset_top = 222.28918
+offset_right = -4.9895554
+offset_bottom = 289.05493
+texture_normal = ExtResource("4_ju3p5")
+ignore_texture_size = true
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1733047983]
+offset_left = 0.59874463
+offset_top = 224.1438
+offset_right = 60.47358
+offset_bottom = 285.34576
+texture_normal = ExtResource("5_avq3p")
+ignore_texture_size = true
+
+[node name="Group77" type="Sprite2D" parent="." unique_id=66278132]
+position = Vector2(208, 200)
+scale = Vector2(1.1923076, 1.1923077)
+texture = ExtResource("6_yqeo1")
+
+[node name="Group78" type="Sprite2D" parent="." unique_id=1718956902]
+position = Vector2(208, 344)
+scale = Vector2(1.1923076, 1.1923077)
+texture = ExtResource("7_gre2m")
+
+[node name="Group81" type="Sprite2D" parent="." unique_id=1781745611]
+position = Vector2(208, 488.00003)
+scale = Vector2(1.1923076, 1.1923077)
+texture = ExtResource("8_h1nnw")
+
+[node name="Rectangle59" type="Sprite2D" parent="." unique_id=747335973]
+position = Vector2(168, 96)
+scale = Vector2(1.1532264, 1.0119047)
+texture = ExtResource("9_vehn5")

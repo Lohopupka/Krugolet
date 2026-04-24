@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://1a1ymd2ed1ow"]
+
+[ext_resource type="Script" uid="uid://boyd2w23abciv" path="res://role.gd" id="1_a6pwq"]
+[ext_resource type="Texture2D" uid="uid://dmbatagm8a26h" path="res://sprite_menuANDprof/hon.jpg" id="2_xelm2"]
+[ext_resource type="Texture2D" uid="uid://ccbhwne5kravr" path="res://sprite_menuANDprof/stad.png" id="3_fgm1l"]
+[ext_resource type="Texture2D" uid="uid://qoww5gqnww3i" path="res://sprite_menuANDprof/ych.png" id="4_i4t8w"]
+[ext_resource type="Texture2D" uid="uid://dn4n75l2gsc07" path="res://sprite_menuANDprof/rod.png" id="5_6x8iu"]
+
+[sub_resource type="SystemFont" id="SystemFont_i4t8w"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="LabelSettings" id="LabelSettings_6x8iu"]
+font_size = 56
+font_color = Color(0.016802937, 0.00893833, 0, 1)
+
+[node name="RoleSelectionScene" type="Control" unique_id=1734344062]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a6pwq")
+
+[node name="hon2D" type="Sprite2D" parent="." unique_id=1612139094]
+position = Vector2(178.99997, 318.50006)
+scale = Vector2(0.7552743, 0.50000006)
+texture = ExtResource("2_xelm2")
+
+[node name="role_student" type="CheckBox" parent="." unique_id=1248577869]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 152.0
+offset_right = 237.0
+offset_bottom = 270.0
+
+[node name="TextureRect" type="TextureRect" parent="role_student" unique_id=775358460]
+layout_mode = 0
+offset_left = 25.0
+offset_top = -2.0
+offset_right = 150.0
+offset_bottom = 123.0
+texture = ExtResource("3_fgm1l")
+expand_mode = 1
+
+[node name="role_teacher" type="CheckBox" parent="." unique_id=705156213]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 301.0
+offset_right = 235.0
+offset_bottom = 405.0
+
+[node name="TextureRect" type="TextureRect" parent="role_teacher" unique_id=1039478439]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -14.0
+offset_right = 151.0
+offset_bottom = 107.0
+texture = ExtResource("4_i4t8w")
+expand_mode = 1
+
+[node name="role_parent" type="CheckBox" parent="." unique_id=713004517]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 423.0
+offset_right = 241.0
+offset_bottom = 543.0
+
+[node name="TextureRect" type="TextureRect" parent="role_parent" unique_id=873223928]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 3.0
+offset_right = 150.72221
+offset_bottom = 124.0
+texture = ExtResource("5_6x8iu")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1998020743]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 42.0
+offset_right = 328.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0.5568628, 0.26666668, 0.6784314, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_i4t8w")
+theme_override_font_sizes/font_size = 50
+text = "выбор роли"
+label_settings = SubResource("LabelSettings_6x8iu")
+
+[node name="start_button" type="Button" parent="." unique_id=1378797598]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 559.0
+offset_right = 279.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0.8620229, 0.8770148, 0.89051545, 1)
+text = "Подтвертить"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
